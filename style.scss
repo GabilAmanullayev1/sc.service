@@ -1,0 +1,167 @@
+$main-color: black;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1190px;
+    padding: 0px 32px;
+    margin: 0 auto;
+}
+
+nav {
+    background: transparent;
+    transition: all 0.5s;;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+
+        align-items: center;
+
+        .logo {
+            cursor: pointer;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+
+            li {
+                padding: 20px 16px;
+                position: relative;
+
+                a {
+                    text-decoration: none;
+                    color: whitesmoke;
+                    font-size: 12px;
+                }
+
+                i {
+                    color: whitesmoke;
+                    font-size: 12px;
+                    margin-left: 5px;
+                }
+
+                // Styles for Blog Dropdown
+                .blog-dropdown {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 200px;
+                    background-color: whitesmoke;
+                    padding: 10px;
+                    display: none;
+                    line-height: 1.625em;
+                    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+                    a {
+                        display: block;
+                        color: #333;
+                        padding-bottom: 20px;
+                    }
+
+                }
+
+                &:hover .blog-dropdown {
+                    display: block;
+                    transition: display 0.5s ease;
+                }
+
+                // Styles for Regular Dropdown
+                .dropdown {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 200px;
+                    background-color: whitesmoke;
+                    padding: 15px;
+                    display: none;
+                    line-height: 1.625em;
+
+                    a {
+                        display: block;
+                        color: #333;
+                        padding-bottom: 20px;
+                    }
+
+                    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+                    0 3px 6px rgba(0, 0, 0, 0.23);
+                }
+
+                &:hover .dropdown {
+                    display: block;
+                    transition: display 0.5s ease;
+                }
+            }
+        }
+    }
+}
+#banner {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('header-bg.jpg.webp');
+    background-size: cover;
+
+    .banner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .banner-text {
+            width: 70%;
+            h4{
+                color: #fff;
+            }
+
+            h1 {
+                font-size: 56px;
+                font-weight: 300;
+                color: #fff;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1.625em;
+                color: #fff
+            }
+
+            .banner-btn {
+                margin-top: 20px;
+                background-color:#fab700 ;
+                cursor: pointer;
+                padding: 10px 0;
+                padding-left: 30px;
+                padding-right: 30px;
+                font-size: 14px;
+                font-weight: 500;
+                border: none;
+                transition: all 0.8s ease;
+
+                &:hover {
+                    background-color: $main-color;
+                    border: 1px solid yellow;
+                    color: white;
+                }
+            }
+
+
+        }
+    }
+}
