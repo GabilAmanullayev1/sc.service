@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -109,6 +110,7 @@ nav #nav-bottom .nav-bar {
   margin-top: 20px;
   background-color: #fab700;
   cursor: pointer;
+  color: #fff;
   padding: 10px 0;
   padding-left: 30px;
   padding-right: 30px;
@@ -121,4 +123,59 @@ nav #nav-bottom .nav-bar {
   background-color: black;
   border: 1px solid yellow;
   color: white;
+}
+
+/* Eklediğiniz class için stiller */
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Diğer stilleri ekleyin */
+}
+
+#services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+#services h1 {
+  font-size: 44px;
+}
+#services #p {
+  color: #777777;
+}
+#services .services {
+  display: flex;
+  gap: 30px;
+  margin-top: 100px;
+}
+#services .services .services-box {
+  padding: 30px;
+  background-color: #f9f9ff;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.9s ease 0s;
+}
+#services .services .services-box:hover {
+  background-color: orange;
+}
+#services .services .services-box .services-image {
+  width: 60%;
+}
+#services .services .services-box .services-image .img {
+  width: 100%;
+  height: 100%;
+}
+#services .services .services-box .services-text {
+  width: 100%;
+}
+#services .services .services-box .services-text h2 {
+  font-size: 1.2rem;
+  color: #222222;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+#services .services .services-box .services-text p {
+  color: #777777;
 }/*# sourceMappingURL=style.css.map */
